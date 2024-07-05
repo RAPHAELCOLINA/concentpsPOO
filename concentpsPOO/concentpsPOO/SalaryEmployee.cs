@@ -13,7 +13,7 @@
 
         {
             return $"{base.ToString()}"
-                + $"\n\tValue To pay........: {GetValueToPay():C2}";
+                + $"\n\tValue To pay.........:{$"{GetValueToPay():C2}",19}";
         }
     }
 }
