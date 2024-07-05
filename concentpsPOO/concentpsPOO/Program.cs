@@ -3,14 +3,27 @@ using concentpsPOO;
 
 Console.WriteLine("HOLA PICHE DE MUNDO ");
 Console.WriteLine("-------------------");
-try
+Employee employee1 = new SalaryEmployee()
 {
-	Console.WriteLine(new Date(2024, 2, 29));
-	Console.WriteLine(new Date(2024, 07, 21));
-	Console.WriteLine(new Date(2024, 11, 31));
-}
-catch (Exception error)
-{
+    Id = 1010,
+    FirstName = "Rafael",
+    LastName = "Colina",
+    BirthDate = new Date(1987, 07, 30),
+    HiringDate = new Date(2018, 04, 17),
+    IsActive = true,
+    Salary = 188888888.45555M
+};
+Console.WriteLine(employee1);
 
-	Console.WriteLine(error.Message);
-}
+Employee employee2 = new CommissionEmployee()
+{
+    Id = 1020,
+    FirstName = "Rafael",
+    LastName = "Aguilar",
+    BirthDate = new Date(1987, 07, 30),
+    HiringDate = new Date(2018, 04, 17),
+    IsActive = true,
+    Sales = 1888845555M,
+    CommissionPercentaje = 0.03f
+};
+Console.WriteLine(employee2);
